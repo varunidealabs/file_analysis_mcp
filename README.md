@@ -100,7 +100,7 @@ Because servers are locally run, MCP currently only supports desktop hosts.
 This tutorial will primarily focus on tools.
 
 Let's get started with building our file analysis server!  
-[You can find the complete code for what we'll be building here.](https://github.com/varunidealabs/simple-calculator-mcp-server.git)
+[You can find the complete code for what we'll be building here.](https://github.com/varunidealabs/file_analysis_mcp.git)
 
 ---
 
