@@ -432,28 +432,23 @@ Save the file and restart **Claude for Desktop**.
 Install build tools:
 
 ```bash
-pip install --upgrade build twine
+uv pip install --system build twine
 ```
 
 Build the package:
 
 ```bash
-python -m build
+uv -m build
 ```
 
 ### Upload to TestPyPI
 
 ```bash
-python -m twine upload --repository testpypi dist/*
+uv -m twine upload --repository testpypi dist/*
 ```
 
 You'll be prompted for your TestPyPI `username` and `password`.
 
-### Test the Installation from TestPyPI
-
-```bash
-pip install --index-url https://test.pypi.org/simple/ --no-deps file-analysis-mcp
-```
 
 ### Register on the Real PyPI
 
@@ -465,7 +460,7 @@ If the TestPyPI upload and installation works correctly:
 ### Upload to PyPI
 
 ```bash
-python -m twine upload dist/*
+uv -m twine upload dist/*
 ```
 
 Enter your PyPI credentials when prompted.
